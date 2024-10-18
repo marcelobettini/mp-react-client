@@ -12,7 +12,7 @@ function Coffee() {
 
     const createPreference = async () => {
         try {
-            const res = await fetch('http://127.0.0.1:3000/create-preference', {
+            const res = await fetch('https://mp-node-server.onrender.com/create-preference', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

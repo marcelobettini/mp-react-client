@@ -1,6 +1,6 @@
 
 import './App.css'
-import Coffee from './assets/components/Coffee'
+import Coffee from './components/Coffee'
 
 function App() {
 

@@ -24,7 +24,7 @@ function Coffee() {
                 }
                 )
             })
-            console.log(res)
+            console.log('cliente res:', res)
             const { id } = res.data
             return id
         } catch (err) {
@@ -42,7 +42,7 @@ function Coffee() {
             <h3>Regalame un ☕️</h3>
             <button onClick={handleBuyingProcess}>Poniendo estaba la 🪿</button>
             {preferenceId &&
-                <Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} customization={{ texts: { valueProp: 'smart_option' } }} />
+                <Wallet initialization={{ preferenceId: preferenceId }} customization={{ texts: { valueProp: 'smart_option' } }} />
 
             }
         </main>

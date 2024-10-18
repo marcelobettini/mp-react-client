@@ -24,9 +24,10 @@ function Coffee() {
                 }
                 )
             })
-            const { data } = await res.json()
+            const parsed = await res.json()
+            console.log(parsed)
 
-            const { id } = data
+            const { id } = parsed
             return id
         } catch (err) {
             console.error(err.message)

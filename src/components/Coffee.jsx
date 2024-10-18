@@ -23,9 +23,10 @@ function Coffee() {
                     unit_price: 1800
                 }
                 )
-            })
+            });
             const parsed = await res.json()
-            console.log(parsed)
+            console.log('parsed:', parsed)
+            console.log('res:', res)
 
             const { id } = parsed
             return id

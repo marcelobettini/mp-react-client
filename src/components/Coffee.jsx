@@ -25,9 +25,6 @@ function Coffee() {
                 )
             });
             const parsed = await res.json()
-            console.log('parsed:', parsed)
-            console.log('res:', res)
-
             const { id } = parsed
             return id
         } catch (err) {

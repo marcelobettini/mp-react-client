@@ -24,8 +24,9 @@ function Coffee() {
                 }
                 )
             })
-            console.log('cliente res:', res)
-            const { id } = res.data
+            const { data } = await res.json()
+
+            const { id } = data
             return id
         } catch (err) {
             console.error(err.message)

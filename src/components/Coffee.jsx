@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 function Coffee() {
     const [preferenceId, setPreferenceId] = useState(null)
-    initMercadoPago(process.env.MP_PUBLIC_KEY, { locale: 'es-AR' });
+    initMercadoPago('APP_USR-e4583866-44b9-4f26-beae-1254e4f2e75d', { locale: 'es-AR' });
 
     const createPreference = async () => {
         try {
